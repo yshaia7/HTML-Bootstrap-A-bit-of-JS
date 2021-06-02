@@ -1,0 +1,125 @@
+<!doctype html>
+<html dir="rtl" lang="he">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+          integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+            integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+            crossorigin="anonymous"></script>
+
+    <script src="button.js"></script>
+    <title>Yeshaya winstock</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="jumbotron text-center bg-info">
+        <h1>הנחיות</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h2>הנחיות כלליות</h2>
+            <br>
+            <p>
+                תרגילים: בקורס יהיו 4 תרגילים ובחינה מסכמת. חובה להגיש את כל המטלות. משקל כל תרגיל בציון הסופי הוא 17%.
+                ומשקל הבחינה מסכמת 32%.
+            </p>
+            <p>
+                מי שלא הגיש את כל התרגילים לא יהיה זכאי לגשת לבחינה.
+            </p>
+            <p>
+                אם ממוצעת התרגילים עולה על ציון המבחן ב20 נקודות או יותר,
+                אז התרגילים לא ישוקללו בציון הסופי (ציון המבחן יקבע את הציון הסופי).
+            </p>
+            <P>מעבר הקורס בהצלחה מותנה בעמידה בתנאים הבאים: מעבר הבחינה המסכמת בציון של לכל הפחות 55,
+                ממוצע משוקלל של לכל הפחות 55. בכל מקרה הציון הסופי בקורס לא יעלה על מאה.</P>
+            <P>תלמיד שציון הבחינה שלו לכל היותר 55, ציונו בקורס הוא ציון הבחינה.</p>
+            <p>
+                הערה בעניין הציון: כל הנ"ל הוא בהנחה שניתן יהיה לקיים בחינה שתקנה ציון מספרי
+                . היה והדבר לא יתאפשר בשל הקורונה תתקיים בחינה עם ציון מילולי.
+                במצב זה, עת הדבר יתאפשר, נקיים מועד בחינה נוסף לתלמידים שיבקשו לקבל ציון מספרי.
+            </P>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-xl-4">
+            <h2>מטלות</h2>
+            <br>
+            <p>
+                ניתן לעבוד על windows או OSX ללא הבדל.
+            </p>
+            <p>
+                העבודה ביחידים. יש להגיש את כל התרגילים דרך moodle בלבד.
+                לפני הגשת התרגיל בדקו שתכניתכם עובדת כהלכה על המחשבים של החוג (או על מחשב אחר).
+            </p>
+            <p>
+                אין הגשות חוזרות: תלמיד שתרגיל שלו יוגש באופן
+                לא תקין לא יוכל להגישם בשנית, וציונו יהיה לפי החומר שהוגש.
+            </p>
+            <p>
+            ניתן להגיש תרגיל באיחור ללא אישור עד 3 ימים איחור. אין הגשות מעבר
+            ל3 ימי איחור ללא אישור מראש של המרצה. בכל מצב, הקנס יהיה 3 נק' ליום איחור.
+            </p>
+            <p>
+                ערעור על ציון תרגיל יימסר לכל היותר 7 ימים לאחר פרסום הציון
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-xl-12">
+            <h2>רשימת טעויות נפוצות:</h2>
+            <br>
+            <button id="toggle_button">פתח</button>
+
+            <div class="list " id="common_mistakes">
+                <ol>
+                    <li> אתר לא רספונסיבי <a href="https://youtu.be/-euJ7-0XBmA"> (איך לבדוק) </a> [-3]</li>
+                    <li>קוד לא רלוונטי לפתרון (לדוגמא קוד מועתק מדוגמאות קוד של חומר הקורס) [-1]</li>
+                    <li>שם פרויקט לא תקין [-1]</li>
+                    <li>שם קובץ readme.html לא תקין ,פרטים חסרים [-2]</li>
+                    <li>חוסר בארגון קבצים (כגון ערבוב קבצי מסוגים שונים יחד עם הקוד, ערבוב מחלקות MVC) [-3]</li>
+                    <li>חוסר תיעוד [-1 :-3]</li>
+                    <li>קוד לא מודולרי / OOP: מחלקות גדולות רב תפקיד, מתודות ארוכות, מחרוזות לא סטטיות, אי שימוש בקובץ
+                        קונפיגורציה לפרמטרים של התכנית, שכפול קוד [-1 :-3]
+                    </li>
+                    <li>שימוש בחומר שלא נלמד בקורס (כגון ספריות וכלים מיוחדים), ללא אישור [תרגיל פסול]</li>
+                    <li>עיצוב לא עומד בכללי שימושיות בסיסים: כפתורי ניווט בכל הדפים, הודעות למשתמש בעלות משמעות, תצוגה
+                        ברורה,
+                        שימוש ברכיבים HTML (components) שנלמדו [-2]
+                    </li>
+                    <li>עיצוב תחת דרישות מינימליות של HTML (דוגמאות של templates שמומלץ לאמץ) [-2]</li>
+                    <li>דפים שלא ניתן ״לרענן״ בדפדפן (טעות נפוצה, שליחת טופס ב-post ללא טיפול ב-get) – כלומר סגירת
+                        הדפדפן ופתיחה
+                        שוב על אותה כתובת URL גורמת ל-error [-3]
+                    </li>
+                    <li>תכנית קורסת (כגון exception, שגיאות 500, 404 )</li>
+                    <li>טיפול שגוי/חסר כאשר יש ניתוק קשר עם גורם חיצוני (כגון שרת מסדי נתונים, קובץ, כל סוג תקשורת
+                        שרת-לקוח).
+                        [-5]
+                    </li>
+                    <li>שגיאות ב- console ובלשונית הרשת (network) של ה-inspector. שגיאות מסוג זה מעידות על באגים בקוד
+                        שלכם שלא
+                        בהכרח בולטות בעין.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
